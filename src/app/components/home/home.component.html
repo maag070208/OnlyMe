@@ -6,7 +6,13 @@
         {{counts.num2}} 
       </h1>
 </div>
-<input value={{counts.inputValue}} />
-<h1>{{counts.inputValue}}</h1>
+<input name= "name" [(ngModel)]="people.name" />
+<input name= "age" [(ngModel)]="people.age">
+<h1>
+  {{people.name}}
+</h1>
+<h1>
+  {{people.age}}
+</h1>
 <button routerLink="/login">Change</button>
 <button (click)="countFunction()">Counting</button>
