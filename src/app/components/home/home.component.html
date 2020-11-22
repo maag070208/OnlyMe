@@ -1,0 +1,12 @@
+<h1>Home page</h1>
+<div class="col-md-4" *ngFor="let counts of count">
+    <div class="card text-center">
+      <h1>
+        {{counts.num1}} 
+        {{counts.num2}} 
+      </h1>
+</div>
+<input value={{counts.inputValue}} />
+<h1>{{counts.inputValue}}</h1>
+<button routerLink="/login">Change</button>
+<button (click)="countFunction()">Counting</button>
