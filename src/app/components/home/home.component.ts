@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModelGroup } from '@angular/forms';
+import { Modelo } from 'src/app/models/modelo/modelo.module';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +14,16 @@ export class HomeComponent implements OnInit {
     num2: 0,
     inputValue: "HELLO WORLD UWU"
   }]
-  constructor() {}
+  people: Modelo ={
+    name: '',
+    age: 0
+  };
+
+  
+  constructor() {
+    this.people.name= "fulanito"
+    this.people.age = 20;
+  }
 
   ngOnInit(): void {}
 
